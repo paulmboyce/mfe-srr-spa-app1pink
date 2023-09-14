@@ -48,12 +48,12 @@ NONE: we also `px wait-on ./server-build` before starting the SSR server.
    importmap: {
    imports: {
      ...
-     "@pmat-org/app1": "http://localhost:{{webpack port}}/pmat-org-app1.js",
+     "@pmat-org/app1pink": "http://localhost:{{webpack port}}/pmat-org-app1pink.js",
      ...
 
    server-side-render": {
      ...
-   "@pmat-org/app1": {
+   "@pmat-org/app1pink": {
      url: "localhost:{{nodejs port}}/ssr",
    },
    ...

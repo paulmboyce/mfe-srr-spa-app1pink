@@ -1,10 +1,10 @@
 {
-  "name": "@pmat-org/app1",
+  "name": "@pmat-org/app1pink",
   "scripts": {
-    "start:spa": "webpack serve --port 3010",
+    "start:spa": "webpack serve --port 4010",
     "start:spa:standalone": "webpack serve --port 3000 --env standalone",
     "ssr:server:babel:build": "babel src -d server-build -w",
-    "ssr:server:start:dev": "PORT=3011 nodemon ./server-build/server/react-server-ssr.js",
+    "ssr:server:start:dev": "PORT=4011 nodemon ./server-build/server/react-server-ssr.js",
     "start:ssr:dev": "concurrently 'npm:ssr:server:babel:build' 'npx wait-on ./server-build && npm run ssr:server:start:dev' 'npm:start:spa'",
     "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
